@@ -3,4 +3,4 @@ rabbit_data/
 temperature_log.txt
 .DS_Store
 npm-debug.log*
-.README.md
+LOCAL_GUIDE.md
