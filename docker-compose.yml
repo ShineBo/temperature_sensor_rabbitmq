@@ -1,0 +1,12 @@
+services:
+  rabbitmq:
+    container_name: temperature_sensor_rabbitmq
+    image: rabbitmq:4-management-alpine
+    ports:
+      - "127.0.0.1:5672:5672"
+      - "127.0.0.1:15672:15672"
+    volumes:
+      - "./rabbit_data:/var/lib/rabbitmq"
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: "1234"

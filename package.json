@@ -1,0 +1,14 @@
+{
+  "name": "temperature-sensor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RabbitMQ temperature sensor publish/subscribe assignment",
+  "scripts": {
+    "publisher": "node publisher.js",
+    "display": "node display_service.js",
+    "log": "node log_service.js"
+  },
+  "dependencies": {
+    "amqplib": "2.2.0"
+  }
+}
